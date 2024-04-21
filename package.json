@@ -31,5 +31,6 @@
   "author": "",
   "license": "ISC",
   "keywords": [],
-  "main": "index.js"
+  "main": "index.js",
+  "devDependencies": {}
 }
