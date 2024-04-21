@@ -1,0 +1,167 @@
+body {
+  background-color: #ffffff; /* Sets the whole page background to white */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif; /* Ensures text is styled consistently */
+}
+
+.transportation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff98; /* Ensures the container also has a white background */
+  min-height: calc(100vh - 40px); /* Adjusted for full height minus padding */
+}
+
+.transportation-title {
+  color: #333;
+  font-size: 35px;
+  font-weight: 550;
+  margin-bottom: 90px;
+  line-height: 1.4;
+}
+
+.input-container {
+  background-color: rgba(72, 188, 226, 0.221);
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  display: flex;
+  gap: 10px;
+  width: 60%;
+  max-width: 600px;
+  margin: auto;
+
+}
+.departureCitySelect{
+    margin: auto;
+    background-color: #ffffff98;
+    padding: 12px;
+    border-radius: 40px;
+    box-shadow:  1px solid #1b1b1b;
+    font-size: 16px; 
+    max-width: 100%;
+    width: 1020px;
+  }
+
+.select, .search-button {
+  padding: 12px 18px;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  padding: 12px;
+  margin: 2%;
+  margin-left: 45%;
+}
+
+.search-button {
+  background-color: #56b7eb;
+  color: white;
+  border:#1b1b1b;
+  border-radius: 100px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 50px;
+}
+
+.search-button:hover {
+  background-color: #00a2ff;
+}
+
+.transportation-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* At most 3 items per line */
+  gap: 40px;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 50px;
+  
+}
+
+.transportation-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  line-height: 1.6;
+
+  border-radius: 40px;
+  border: solid 1px #f7f7f7;
+  box-shadow: #1b1b1b 1px 2px rgba(0,0,0,0.1);
+  background:fixed #b8d9f65c;
+
+}
+
+.transportation-item:hover {
+  transform: translateY(-5px);
+  background: rgb(181, 218, 251) 50%;
+
+  
+}
+
+.transportation-item p {
+  margin: 5px 0;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.transportation-item .search-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.transportation-item .search-button:hover {
+  background-color: #004085;
+}
+
+/* Popup styling resembling a debit card */
+.transportation-popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 100;
+  display: grid;
+  grid-template-areas:
+    'number number'
+    'date code';
+  gap: 10px;
+  line-height: normal;
+}
+
+.transportation-popup input[type="text"],
+.transportation-popup input[type="date"],
+.transportation-popup input[type="number"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.transportation-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 50;
+}
+
+
+
+

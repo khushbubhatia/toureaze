@@ -1,0 +1,26 @@
+.all{
+    position: relative;
+    margin-top: 50%;
+}
+.whyus{
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.296);
+    color: rgb(77, 76, 76); 
+    padding: 20px;
+    margin:20px;
+}
+
+.whyusp
+{
+    text-align: justify;
+    font-size: small;
+    color:grey;
+    padding: 10px;
+}
+h1{
+    color:rgb(252, 252, 252);
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
